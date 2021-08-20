@@ -367,6 +367,11 @@
 
      <!-- Enable LiveDisplay -->
     <bool name="config_liveDisplayAvailable">true</bool>
+     
+     <!-- Smart charging -->
+    <string name="config_SmartChargingSysfsNode" translatable="true">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_SmartChargingSuspendValue" translatable="true">1</string>
+    <string name="config_SmartChargingResumeValue" translatable="true">0</string>
 
     <!-- The default refresh rate. Apollo manages this using the peak refresh rate setting, so set
          this value to 0 so it has no effect. -->
