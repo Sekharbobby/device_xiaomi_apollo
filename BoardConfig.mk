@@ -38,5 +38,8 @@ TARGET_KERNEL_CONFIG := vendor/apollo_defconfig
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := apollo,apollopro,apollon
 
+#Selinux
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/apollo/BoardConfigVendor.mk

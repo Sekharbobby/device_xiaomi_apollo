@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,8 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Zeus-OS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Gapps and stuff
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_INCLUDE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 PRODUCT_NAME := lineage_apollo
 PRODUCT_DEVICE := apollo
