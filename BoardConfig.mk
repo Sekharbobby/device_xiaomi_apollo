@@ -29,11 +29,12 @@ TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_SCREEN_DENSITY := 440
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollo
-TARGET_RECOVERY_DEVICE_MODULES := libinit_apollo
+
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_apollo
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_apollo
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/apollo_defconfig
+TARGET_KERNEL_CONFIG := apollo_defconfig
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := apollo,apollopro,apollon
